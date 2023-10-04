@@ -28,6 +28,16 @@
     bottom: 45px;
     z-index: 99;
 }
+.logo-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+#logo {
+    height: 100px;
+    /* Set your black logo image path here */
+}
 
 
 /*** Heading ***/
