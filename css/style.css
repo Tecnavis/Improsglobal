@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #2124B1;
-    --secondary: #4777F5;
+    --primary: #2d77b4;
+    --secondary: #41a2f2;
     --light: #F7FAFF;
     --dark: #1D1D27;
 }
@@ -103,15 +103,21 @@ h6,
     color: #FFFFFF;
 }
 
-.navbar-light .navbar-brand img {
+.navbar-light .navbar-brand #logo1 {
     max-height: 60px;
     transition: .5s;
 }
 
-.sticky-top.navbar-light .navbar-brand img {
+.sticky-top.navbar-light .navbar-brand #logo1 {
     max-height: 45px;
+    
+    
 }
-
+.sticky-top.navbar-light .navbar-brand #logo2 {
+    display: none; /* Initially hide the second logo */
+    max-height: 60px;
+    transition: .5s;
+}
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
@@ -136,6 +142,7 @@ h6,
 
     .navbar-light .navbar-brand img {
         max-height: 45px;
+
     }
 }
 

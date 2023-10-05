@@ -107,3 +107,23 @@
     
 })(jQuery);
 
+window.addEventListener('scroll', function() {
+    // Define the scroll threshold at which you want to swap logos
+    var scrollThreshold = 50; // Adjust as needed
+
+    // Get the current scroll position
+    var scrollPosition = window.scrollY || window.pageYOffset;
+
+    // Select the logo elements
+    var logo1 = document.getElementById('logo1');
+    var logo2 = document.getElementById('logo2');
+
+    // Check if the user has scrolled past the threshold
+    if (scrollPosition >= scrollThreshold) {
+        logo1.style.display = 'none'; // Hide the first logo
+        logo2.style.display = 'block'; // Display the second logo
+    } else {
+        logo1.style.display = 'block'; // Display the first logo
+        logo2.style.display = 'none'; // Hide the second logo
+    }
+});
