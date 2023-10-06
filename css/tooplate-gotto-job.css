@@ -622,7 +622,6 @@ nav[aria-label="breadcrumb"] {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-image: url('../images/site-header/close-up-young-business-team-working.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -630,8 +629,21 @@ nav[aria-label="breadcrumb"] {
   padding-top: 150px;
   padding-bottom: 150px;
 }
+.site-new {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
 
 .site-header .section-overlay {
+  background: var(--primary-color);
+}
+.site-new .section-overlay {
   background: var(--primary-color);
 }
 
