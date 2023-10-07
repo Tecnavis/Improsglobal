@@ -1567,3 +1567,11 @@ nav[aria-label="breadcrumb"] {
   }
 }
 
+.img-fluid{
+  width:200px;
+}
+.image-title{
+  font: 24px;
+  font-weight: 800;
+  padding-top:20px;
+}
