@@ -207,6 +207,9 @@ nav[aria-label="breadcrumb"] {
 .breadcrumb {
   margin-bottom: 0;
 }
+.footwidth{
+  width:100px;
+}
 
 
 /*---------------------------------------
@@ -1581,10 +1584,10 @@ nav[aria-label="breadcrumb"] {
   margin-top: -220px;
   overflow: hidden;
   z-index: 1; /* Ensure the content appears above the pseudo-element */
-  /* height: 100px; */
+  /* height: 100px; */}
 
 
-.img-fluid{
+  .img-fluid{
   width:200px;
   height:100px;
   margin-top:100px;
