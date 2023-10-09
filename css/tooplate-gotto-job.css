@@ -404,6 +404,11 @@ nav[aria-label="breadcrumb"] {
   background: var(--white-color);
   color: var(--custom-btn-bg-color);
 }
+.custom-border-btn-wrap .custom-border-btn:hover,
+.cta-section .custom-border-btn:hover {
+  background: var(--white-color);
+  color: var(--custom-btn-bg-color);
+}
 
 .custom-border-btn-wrap .custom-link {
   color: var(--white-color);
@@ -1434,6 +1439,7 @@ nav[aria-label="breadcrumb"] {
   .cta-section {
     padding-top: 50px;
     padding-bottom: 50px;
+
   }
 
   .about-page .about-section {
@@ -1566,14 +1572,52 @@ nav[aria-label="breadcrumb"] {
     margin: 20px auto 0 auto;
   }
 }
+.why-choose-us-section {
+  position: relative;
+  background-image: url('../images/abstract.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Adjust the background size as needed */
+  border-radius: 10px;
+  margin-top: -220px;
+  overflow: hidden;
+  z-index: 1; /* Ensure the content appears above the pseudo-element */
+  /* height: 100px; */
 
+
+<<<<<<< HEAD
 .img-fluid{
   width:200px;
   height:100px;
   margin-top:100px;
+=======
+>>>>>>> 5d25a0281c09c7b05b5fb62afb98892052aeaf6e
 }
-.image-title{
-  font: 24px;
-  font-weight: 800;
-  padding-top:20px;
+
+.why-choose-us-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  filter: blur(-10px); /* Apply a blur effect to the background */
+  z-index: -1; /* Move the pseudo-element behind the content */
+}
+
+.why-choose-us-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(173, 216, 230, 0.5); /* Semi-transparent sky blue background color */
+  z-index: -1; /* Move the pseudo-element behind the content */
+}
+
+
+}
+.feature-description{
+  color:black;
 }
