@@ -1569,6 +1569,8 @@ nav[aria-label="breadcrumb"] {
 
 .img-fluid{
   width:200px;
+  height:100px;
+  margin-top:100px;
 }
 .image-title{
   font: 24px;
