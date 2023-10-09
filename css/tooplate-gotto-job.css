@@ -12,9 +12,9 @@ https://www.tooplate.com/view/2134-gotto-job
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #5d52ba;
-  --secondary-color:              #0dcaf0;
+  --secondary-color:              #5d52ba;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #f65129;
+  --custom-btn-bg-color:          #5d52ba;
   --social-icon-link-bg-color:    #7f73eb;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -1584,13 +1584,11 @@ nav[aria-label="breadcrumb"] {
   /* height: 100px; */
 
 
-<<<<<<< HEAD
 .img-fluid{
   width:200px;
   height:100px;
   margin-top:100px;
-=======
->>>>>>> 5d25a0281c09c7b05b5fb62afb98892052aeaf6e
+
 }
 
 .why-choose-us-section::before {
