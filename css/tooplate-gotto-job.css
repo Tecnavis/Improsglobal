@@ -132,7 +132,6 @@ strong {
 -----------------------------------------*/
 .section-padding {
   padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .section-bg {
@@ -1581,7 +1580,6 @@ nav[aria-label="breadcrumb"] {
   background-repeat: no-repeat;
   background-size: cover; /* Adjust the background size as needed */
   border-radius: 10px;
-  margin-top: -220px;
   overflow: hidden;
   z-index: 1; /* Ensure the content appears above the pseudo-element */
   /* height: 100px; */}
