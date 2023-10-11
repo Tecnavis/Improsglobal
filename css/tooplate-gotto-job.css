@@ -1587,12 +1587,7 @@ nav[aria-label="breadcrumb"] {
   /* height: 100px; */}
 
 
-  .img-fluid{
-  width:200px;
-  height:100px;
-  margin-top:100px;
 
-}
 
 .why-choose-us-section::before {
   content: "";
@@ -1618,7 +1613,32 @@ nav[aria-label="breadcrumb"] {
 }
 
 
-}
+
 .feature-description{
   color:black;
 }
+.image-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure each card has the same height */
+}
+
+.card {
+  height: 100%; 
+  width: 100%;
+  background-color: #717275;
+}
+
+.card-img-top {
+  width: 50%; /* Make sure the image takes the full width of the card */
+  height:50%; /* Maintain aspect ratio */
+  margin-left:50px;
+  margin-top:20px;
+}
+.each-row{
+  margin-top:100px;
+}
+
