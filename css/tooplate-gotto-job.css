@@ -463,7 +463,13 @@ nav[aria-label="breadcrumb"] {
   }
 }
 
-
+@media (max-width: 768px) {
+  .navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 
 
@@ -596,7 +602,8 @@ nav[aria-label="breadcrumb"] {
   display: block;
   width: 30px;
   height: 2px;
-  position: relative;
+  position: absolute;
+  right: 25px;
 }
 
 .navbar-toggler .navbar-toggler-icon:before,
@@ -606,7 +613,7 @@ nav[aria-label="breadcrumb"] {
   transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
-  left: 0;
+  left: ;
   background: var(--dark-color);
   width: 30px;
   height: 2px;
@@ -1299,6 +1306,7 @@ nav[aria-label="breadcrumb"] {
 .site-footer {
   padding-top: 50px;
   padding-bottom: 0;
+
 }
 
 .site-footer-link {
