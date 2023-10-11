@@ -453,24 +453,22 @@ nav[aria-label="breadcrumb"] {
 }
 
 .logo-image {
-  display: block;
-  width: 155px;
-  margin-right: 15px;
+  max-height: 80px; /* Adjust the maximum height according to your preference */
+  width: auto; /* This ensures the aspect ratio is maintained */
 }
 
-.logo-text {
-  color: var(--primary-color);
-  font-size: var(--h4-font-size);
-  display: block;
-  line-height: normal;
+/* Add this CSS to increase the size of the logo on larger screens */
+@media (min-width: 992px) {
+  .logo-image {
+      max-height: 80px; /* Adjust the maximum height for larger screens */
+  }
 }
 
-.logo-slogan {
-  color: var(--custom-btn-bg-color);
-  font-size: 12px;
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
-}
+
+
+
+
+
 
 .navbar-brand,
 .navbar-brand:hover {
@@ -629,6 +627,7 @@ nav[aria-label="breadcrumb"] {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
+  background-image:url('../images/editing-image-sizes.webp');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -1181,7 +1180,7 @@ nav[aria-label="breadcrumb"] {
   CTA               
 -----------------------------------------*/
 .cta-section {
-  background-image: url('../images/millennial-group-young-businesspeople.jpg');
+  background-image: url('../images/people-working-as-team-company.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -1307,7 +1306,6 @@ nav[aria-label="breadcrumb"] {
 
 .site-footer-bottom {
   background: var(--primary-color);
-  margin-top: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -1581,6 +1579,7 @@ nav[aria-label="breadcrumb"] {
   background-size: cover; /* Adjust the background size as needed */
   border-radius: 10px;
   overflow: hidden;
+ padding-bottom:50px;
   z-index: 1; /* Ensure the content appears above the pseudo-element */
   /* height: 100px; */}
 
@@ -1611,9 +1610,12 @@ nav[aria-label="breadcrumb"] {
 }
 
 
-
+.feature-title{
+  text-align: center;
+}
 .feature-description{
   color:black;
+  text-align: center;
 }
 .image-container {
   margin-bottom: 20px;
