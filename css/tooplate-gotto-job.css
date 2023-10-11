@@ -453,8 +453,9 @@ nav[aria-label="breadcrumb"] {
 }
 
 .logo-image {
-  max-height: 80px; /* Adjust the maximum height according to your preference */
-  width: auto; /* This ensures the aspect ratio is maintained */
+  padding: 0;
+  margin: 0;
+  height: 70px;
 }
 
 /* Add this CSS to increase the size of the logo on larger screens */
