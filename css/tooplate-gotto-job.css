@@ -444,7 +444,7 @@ nav[aria-label="breadcrumb"] {
 .navbar {
   background: var(--white-color);
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 .navbar-brand {
@@ -453,8 +453,6 @@ nav[aria-label="breadcrumb"] {
 }
 
 .logo-image {
-  padding: 0;
-  margin: 0;
   height: 70px;
 }
 
@@ -834,12 +832,14 @@ nav[aria-label="breadcrumb"] {
   overflow: hidden;
   transition: all 0.5s;
   padding: 40px;
+  min-height: 300px ;
 }
 
 .services-block:hover,
 .services-section .services-block-wrap:nth-of-type(odd) .services-block {
   background: var(--section-bg-color);
   border-top-color: var(--secondary-color);
+  margin-bottom:50px ;
 }
 
 .services-block-icon {
@@ -1297,7 +1297,7 @@ nav[aria-label="breadcrumb"] {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 0;
 }
 
