@@ -44,18 +44,18 @@ Bootstrap 5 HTML CSS Template
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="./images/improsyslogo.png" class="logo-image" >
+                    <img src="./images/improsyslogo.png" class=" logo-image">
 
+                
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                 <span class="px-5 mx-5"></span>
-                 <span class="px-5 mx-5"></span>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav  ms-lg-5">
+                <span class="px-5 mx-5"></span>
+                <span class="px-5 mx-5"></span>
+                <div class="collapse navbar-collapse" id="navbarNav" style="">
+                    <ul class="navbar-nav align-items-center ms-lg-5">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
@@ -79,7 +79,7 @@ Bootstrap 5 HTML CSS Template
 
 
                         <li class="nav-item">
-                            <a class="nav-link" href="clients.html">Clientele</a>
+                            <a class="nav-link " href="">Clientele</a>
                         </li>
 
 
@@ -158,31 +158,99 @@ Bootstrap 5 HTML CSS Template
 
 
 
-            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-            <script type="text/javascript">
-                (function() {
-                    emailjs.init("user_yourEmailjsUserID"); // Replace 'user_yourEmailjsUserID' with your actual Email.js User ID
-        
-                    document.getElementById('contactForm').addEventListener('submit', function(event) {
-                        event.preventDefault();
-        
-                        // Get form data
-                        const formData = new FormData(this);
-        
-                        // Send email
-                        emailjs.sendForm('service_yourServiceID', 'template_yourTemplateID', formData)
-                            .then(function(response) {
-                                console.log('Email sent successfully:', response);
-                                alert('Email sent successfully!');
-                            }, function(error) {
-                                console.log('Email failed to send:', error);
-                                alert('Email failed to send. Please try again later.');
-                            });
-                    });
-                })();
-            </script>
 
 
+
+            <section class="my-5 py-5" id="services">
+                <div class="container">
+                  
+                  <div class="row align-items-center">
+                    <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+                      
+                      <div class="rotating-card-container">
+                        
+                        <div class="card card-rotate card-background shadow-primary mt-md-0 mt-5" style="background-color:#f65129;">
+                          <div class="front front-background" style="background-image: url(); background-size: cover;">
+                            <div class="card-body py-7 text-center">
+                              <i class="material-icons text-white text-4xl my-3"></i>
+                              <h3 class="text-white">Experience <br />ImprosGlobal</h3>
+                              <p class="text-white opacity-8">   Experience unparalleled innovation and efficiency with
+                                 Improsglobal and Improsys India's cutting-edge software solutions. Elevate your business performance with our seamless technology expertise</p>
+                            </div>
+                          </div>
+                          <div class="back back-background" style="background-image: url(assets/lap.png); background-size: cover;">
+                            <div class="card-body pt-7 text-center">
+                              <h3 class="text-white">Discover More</h3>
+                              <p class="text-white opacity-8"> For in-depth details, explore further on Improsglobal and Improsys India's
+                                 impactful software services and industry recognition.</p>
+                                 <li class="nav-item">
+                                    <a class="nav-link custom-btn btn" href="products.html">MORE</a>
+                                </li>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                      <div class="row justify-content-start">
+                        <div class="col-md-6">
+                       
+                          <div class="info">
+                            <h5 class="font-weight-bolder mt-3">  Company Overview:</h5>
+                            <p class="pe-5">
+                                Improsglobal, Doha, partners with Improsys India Ltd, Pune, for global
+                                 back-office apps. Specializing in business solutions, training, and software,
+                                  Improsys India focuses on productivity and quality.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="info">
+                            <h5 class="font-weight-bolder mt-3">Expertise and Clients:</h5>
+                            <p class="pe-3">
+                                Improsys India boosts client productivity for brands like KSB Pumps and 
+                                Ferrero Chocolates. Improsglobal excels in Manufacturing Inventory Software globally.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-start mt-5">
+                        <div class="col-md-6 mt-3">
+                          <h5 class="font-weight-bolder mt-3">Global Presence:</h5>
+                          <p class="pe-5">
+                            Improsglobal and Improsys India offer software services in India, the Middle East, and South East Asia. 
+                            Their compatible solutions optimize user experiences on laptops, phones, and tablets.</p>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="info">
+                            <h5 class="font-weight-bolder mt-3">Impact and Recognition:</h5>
+                            <p class="pe-3">
+                                Improsglobal and Improsys India, trusted for quality, 
+                                enhance global client productivity, securing their position as industry leaders.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
 
 
 

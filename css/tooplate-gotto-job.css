@@ -15,6 +15,7 @@ https://www.tooplate.com/view/2134-gotto-job
   --secondary-color:              #0dcaf0;
   --section-bg-color:             #f0f8ff;
   --custom-btn-bg-color:          #f65129;
+ 
   --social-icon-link-bg-color:    #7f73eb;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -395,7 +396,6 @@ nav[aria-label="breadcrumb"] {
   background: var(--secondary-color);
   color: var(--white-color);
 }
-
 .custom-border-btn-wrap .custom-border-btn {
   border-color: var(--white-color);
   color: var(--white-color);
@@ -492,7 +492,7 @@ nav[aria-label="breadcrumb"] {
 
 .navbar-nav .nav-link {
   display: inline-block;
-  color: var(--p-bg-color);
+  color: #0dcaf0;;
   font-size: var(--menu-font-size);
   font-weight: var(--font-weight-medium);
   position: relative;
@@ -502,7 +502,7 @@ nav[aria-label="breadcrumb"] {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: var(--custom-btn-bg-color);
+  color: var( --primary-color);
 }
 
 .dropdown-menu {
@@ -1650,4 +1650,35 @@ nav[aria-label="breadcrumb"] {
 .each-row{
   margin-top:100px;
 }
+<style>
+        .info-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .info-box h2 {
+            color: #007bff;
+        }
+
+        .info-box p {
+            font-size: 1.1em;
+        }
+
+        .info-box:hover {
+            animation: scale 0.3s ease infinite alternate;
+        }
+
+        @keyframes scale {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
 
