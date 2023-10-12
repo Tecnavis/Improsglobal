@@ -1634,6 +1634,10 @@ nav[aria-label="breadcrumb"] {
   align-items: center;
   height: 100%; /* Ensure each card has the same height */
 }
+.image-container img{
+height: 100px;
+
+}
 
 .card {
   height: 100%; 
