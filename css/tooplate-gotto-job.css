@@ -12,9 +12,9 @@ https://www.tooplate.com/view/2134-gotto-job
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #5d52ba;
-  --secondary-color:              #5d52ba;
+  --secondary-color:              #0dcaf0;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #5d52ba;
+  --custom-btn-bg-color:          #f65129;
   --social-icon-link-bg-color:    #7f73eb;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -444,7 +444,7 @@ nav[aria-label="breadcrumb"] {
 .navbar {
   background: var(--white-color);
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 .navbar-brand {
@@ -453,8 +453,7 @@ nav[aria-label="breadcrumb"] {
 }
 
 .logo-image {
-  max-height: 80px; /* Adjust the maximum height according to your preference */
-  width: auto; /* This ensures the aspect ratio is maintained */
+  height: 70px;
 }
 
 /* Add this CSS to increase the size of the logo on larger screens */
@@ -464,7 +463,13 @@ nav[aria-label="breadcrumb"] {
   }
 }
 
-
+@media (max-width: 768px) {
+  .navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 
 
@@ -597,7 +602,8 @@ nav[aria-label="breadcrumb"] {
   display: block;
   width: 30px;
   height: 2px;
-  position: relative;
+  position: absolute;
+  right: 25px;
 }
 
 .navbar-toggler .navbar-toggler-icon:before,
@@ -607,7 +613,7 @@ nav[aria-label="breadcrumb"] {
   transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
-  left: 0;
+  left: ;
   background: var(--dark-color);
   width: 30px;
   height: 2px;
@@ -833,12 +839,14 @@ nav[aria-label="breadcrumb"] {
   overflow: hidden;
   transition: all 0.5s;
   padding: 40px;
+  min-height: 300px ;
 }
 
 .services-block:hover,
 .services-section .services-block-wrap:nth-of-type(odd) .services-block {
   background: var(--section-bg-color);
   border-top-color: var(--secondary-color);
+  margin-bottom:50px ;
 }
 
 .services-block-icon {
@@ -1296,8 +1304,9 @@ nav[aria-label="breadcrumb"] {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 0;
+
 }
 
 .site-footer-link {
