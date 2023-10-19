@@ -25,6 +25,47 @@
         <link href="css/owl.theme.default.min.css" rel="stylesheet">
 
         <link href="css/tooplate-gotto-job.css" rel="stylesheet">
+        <style>
+            /* Add your existing CSS styles here */
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+        </style>
         
 <!--
 
@@ -299,6 +340,114 @@ Bootstrap 5 HTML CSS Template
                         </div>
                         
                         </section>
+
+
+                        <div class="modal" id="categoryModal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <iframe id="pdfViewer" width="100%" height="500px"></iframe>
+                            </div>
+                        </div>
+
+
+
+<script>var modal = document.getElementById("categoryModal");
+    var pdfViewer = document.getElementById("pdfViewer");
+    var span = document.getElementsByClassName("close")[0];
+    
+    function openModal(categoryName) {
+        modal.style.display = "block";
+    
+        // Load different PDFs based on category
+        switch (categoryName) {
+            case "CRM":
+                pdfViewer.src = "docs/CRM Software.pdf";
+                break;
+            case "ERP":
+                pdfViewer.src = "docs/ERP Software.pdf";
+                break;
+            case "AUDIT MANAGMENT":
+                pdfViewer.src = "docs/Audit Management.pdf";
+                break;
+                case "MAINTANCE MANAGMENT":
+                pdfViewer.src = "docs/Maintenance Management.pdf";
+                break;
+                case "COMPLAINT MANAGMENT":
+                pdfViewer.src = "docs/Maintenance Management.pdf";
+                break;
+                case "FIRE AUDIT MANAGMENT":
+                pdfViewer.src = "docs/Fire Audit Management.pdf";
+                break;
+                case "POS":
+                pdfViewer.src = "docs/POS SOftware.pdf";
+                break;
+                case "TASK MANAGMENT":
+                pdfViewer.src = "docs/Task Management.pdf";
+                break;
+                case "WMS MANAGMENT":
+                pdfViewer.src = "docs/WMS Software.pdf";
+                break;
+            // Add more cases for other categories and corresponding PDF file names
+            default:
+                pdfViewer.src = ""; // Set a default PDF or empty source if no match found
+                break;
+        }
+    }
+    
+    var categoryBlocks = document.querySelectorAll(".categories-block");
+    categoryBlocks.forEach(function(block) {
+        block.addEventListener("click", function() {
+            var categoryName = block.querySelector(".categories-block-title").innerText;
+            openModal(categoryName);
+        });
+    });
+    
+    span.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+    
+    window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+    
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     
 
                         
