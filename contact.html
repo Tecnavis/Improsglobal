@@ -373,6 +373,7 @@ Bootstrap 5 HTML CSS Template
                 e.preventDefault()
                 $.ajax({
                     url:"https://script.google.com/macros/s/AKfycbxKKF2meuGfLrTgXXi6qZ81cJCQcnQ6A-FRj5FuB5lhl7QWBUnZuwxQWEB8COOjfooSRQ/exec",
+                    data:$("#newsletter").serialize(),
                     method:"post",
                     success:function (response){
                         window.location.reload()
