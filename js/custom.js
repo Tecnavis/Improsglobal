@@ -50,3 +50,54 @@
 })(window.jQuery);
 
 
+$("#newsletter").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbxKKF2meuGfLrTgXXi6qZ81cJCQcnQ6A-FRj5FuB5lhl7QWBUnZuwxQWEB8COOjfooSRQ/exec",
+        data:$("#newsletter").serialize(),
+        method:"post",
+        success:function (response){
+            window.location.reload()
+            //window.location.href="https://google.com"
+        },
+        error:function (err){
+            alert("Something Error")
+
+        }
+    })
+})
+
+$("#enquiry-form").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbxo5VxLSVxm6upy-oGFdzPrLAyWrP_-IrjundOcLUiK1FjGtMsVSicUsoAjmFePWw55/exec",
+        data:$("#enquiry-form").serialize(),
+        method:"post",
+        success:function (response){
+            window.location.reload()
+            //window.location.href="https://google.com"
+        },
+        error:function (err){
+            alert("Something Error")
+
+        }
+    })
+})
+
+$("#contact-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbw3pgPQflh4FT0eFo1_XRaxzCZ4VRDERZOvj9T6mvgEOfSanUoZD217j-4fSI4N7Ae3YQ/exec",
+                data:$("#contact-form").serialize(),
+                method:"post",
+                success:function (response){
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+   
