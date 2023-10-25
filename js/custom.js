@@ -26,6 +26,25 @@
         }
       }
     })
+        // REVIEWS CAROUSEL
+        $('.reviews-carousel101').owlCarousel({
+          items:3,
+          loop:true,
+          autoplay: true,
+          margin:30,
+            responsive:{
+              0:{
+                items:1
+              },
+              600:{
+                items:2
+              },
+              1000:{
+                items:3
+              }
+            }
+          })
+      
 
     // CUSTOM LINK
     $('.smoothscroll').click(function(){
