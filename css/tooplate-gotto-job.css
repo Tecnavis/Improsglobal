@@ -954,6 +954,36 @@ nav[aria-label="breadcrumb"] {
   border-color: var(--custom-btn-bg-color);
 }
 
+.reviews-carousel101 .owl-item img,
+.avatar-image {
+  border: 5px solid var(--section-bg-color);
+  border-radius: var(--border-radius-large);
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+}
+
+.reviews-carousel101 .owl-dots .owl-dot span {
+  background: var(--white-color);
+  border: 5px solid transparent;
+  padding: 5px;
+  transition: all 0.5s;
+}
+
+.reviews-carousel101 .owl-dots .owl-dot.active span, 
+.reviews-carousel101 .owl-dots .owl-dot:hover span {
+  background: var(--white-color);
+  border-color: var(--custom-btn-bg-color);
+}
+
+.reviews-thumb101 {
+  background: transparent;
+  border-radius: var(--border-radius-medium);
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
 .reviews-thumb {
   background: var(--white-color);
   border-radius: var(--border-radius-medium);

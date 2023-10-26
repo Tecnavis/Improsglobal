@@ -27,6 +27,8 @@
         <link href="css/tooplate-gotto-job.css" rel="stylesheet">
 
         <link href="css/style.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         
 <!--
 
@@ -79,7 +81,7 @@ Bootstrap 5 HTML CSS Template
 
 
                         <li class="nav-item">
-                            <a class="nav-link " href="">Clientele</a>
+                            <a class="nav-link " href="clients.html">Clientele</a>
                         </li>
 
 
@@ -111,7 +113,7 @@ Bootstrap 5 HTML CSS Template
                         </div>
 
                         <div class="col-lg-6 col-12">
-                            <form class="custom-form hero-form" action="#" method="get" role="form">
+                            <form class="custom-form hero-form" id="enquiry-form" action="">
                                 <h3 class="text-white mb-3">Elevate Your Business Online  Take The First Step!</h3>
 
                                 <div class="row">
@@ -119,7 +121,7 @@ Bootstrap 5 HTML CSS Template
                                         <div class="input-group">
                                             <span class="input-group-text" id="basic-addon1"><i class="bi-person custom-icon"></i></span>
 
-                                            <input type="text" name="name" id="name" class="form-control" placeholder="name" required>
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
                                         </div>
                                     </div>
 
@@ -128,14 +130,21 @@ Bootstrap 5 HTML CSS Template
                                             <span class="input-group-text" id="basic-addon2"><i class="bi-phone custom-icon"></i>
                                             </span>
 
-                                            <input type="text" name="phone" id="phone" class="form-control" placeholder="phone" required>
+                                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone Number" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i class="bi-inbox custom-icon"></i></span>
+
+                                            <input type="text" name="email" id="email" class="form-control" placeholder="Your Mail ID">
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-12">
                                         <div class="input-group">
                                             <span class="input-group-text" id="basic-addon1"><i class="bi-list-nested custom-icon"></i></span>
 
-                                            <input type="text" name="message" id="message" class="form-control" placeholder="message">
+                                            <input type="text" name="message" id="message" class="form-control" placeholder="How we can Help You?">
                                         </div>
                                     </div>
                                     
@@ -491,52 +500,69 @@ Bootstrap 5 HTML CSS Template
  
             <section class="why-choose-us-section ">
                 <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center">
-                            <div class="background-container"></div>
-                            <h2 class="section-title" style="padding-top:100px;">Why Choose Us?</h2>
-                            <p class="section-description" >Discover the reasons why businesses trust ImprosGlobal for their software needs.</p>
-                        </div>
-                    </div>
+
                     <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="feature-box">
+                        <div class="col-lg-12 col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center">
+                                    <div class="background-container"></div>
+                                    <h2 class="section-title" style="padding-top:100px;">Why Choose Us?</h2>
+                                    <p class="section-description" >Discover the reasons why businesses trust ImprosGlobal for their software needs.</p>
+                                </div>
+                            </div>
+                            <div class="owl-carousel owl-theme reviews-carousel101">
+                                <div class="reviews-thumb101">
+                                    <div class="feature-box">
                                
-                                <h3 class="feature-title">Expertise & Innovation</h3>
-                                <p class="feature-description">Benefit from our years of expertise and innovative solutions tailored for your business success.</p>
+                                        <h3 class="feature-title">Expertise & Innovation</h3>
+                                        <p class="feature-description">Benefit from our years of expertise and innovative solutions tailored for your business success.</p>
+                                    </div>
+                                   
+                                </div>
+    
+                                <div class="reviews-thumb101">
+                                    <div class="feature-box">
+                                        <h3 class="feature-title">Quality Assurance</h3>
+                                        <p class="feature-description">We prioritize quality, ensuring our products meet the highest standards for reliability and performance.</p>
+                                    </div>
+
+                                </div>
+    
+                                <div class="reviews-thumb101">
+                                    <div class="feature-box">
+                                        <h3 class="feature-title">Tailored Solutions</h3>
+                                        <p class="feature-description">Our solutions are customized to fit your unique business needs, guaranteeing a perfect match.</p>
+                                    </div>
+
+                                </div>
+    
+                                <div class="reviews-thumb101">
+                                    <div class="feature-box">
+                                        <h3 class="feature-title">Global Recognition</h3>
+                                        <p class="feature-description">Trusted worldwide, we have earned a reputation for reliability, innovation, and excellence.</p>
+                                    </div>
+
+                                </div>
+    
+                                <div class="reviews-thumb101">
+                                    <div class="feature-box">
+                                        <h3 class="feature-title">Cost-Effective Solutions</h3>
+                                        <p class="feature-description">We offer high-quality products and services at competitive and economical price points.</p>
+                                    </div>
+
+                                </div>
+                                <div class="reviews-thumb101">
+                                        <div class="feature-box">
+                                            <h3 class="feature-title">Exceptional Support</h3>
+                                            <p class="feature-description">Experience dedicated and round-the-clock support from our expert team whenever you need assistance.</p>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="feature-box">
-                                <h3 class="feature-title">Quality Assurance</h3>
-                                <p class="feature-description">We prioritize quality, ensuring our products meet the highest standards for reliability and performance.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="feature-box">
-                                <h3 class="feature-title">Tailored Solutions</h3>
-                                <p class="feature-description">Our solutions are customized to fit your unique business needs, guaranteeing a perfect match.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="feature-box">
-                                <h3 class="feature-title">Global Recognition</h3>
-                                <p class="feature-description">Trusted worldwide, we have earned a reputation for reliability, innovation, and excellence.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="feature-box">
-                                <h3 class="feature-title">Cost-Effective Solutions</h3>
-                                <p class="feature-description">We offer high-quality products and services at competitive and economical price points.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="feature-box">
-                                <h3 class="feature-title">Exceptional Support</h3>
-                                <p class="feature-description">Experience dedicated and round-the-clock support from our expert team whenever you need assistance.</p>
-                            </div>
-                        </div>
+
                     </div>
+                    
                 </div>
             </section>
 
@@ -1666,7 +1692,7 @@ Bootstrap 5 HTML CSS Template
                         <p>
                             <i class="custom-icon bi-envelope me-1"></i>
 
-                            <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                            <a href="info@improsglobal.net" class="site-footer-link">
                                 info@improsglobal.net
                             </a>
                         </p>
@@ -1714,7 +1740,7 @@ Bootstrap 5 HTML CSS Template
                     <div class="col-lg-4 col-md-8 col-12 mt-3 mt-lg-0">
                         <center><h6 class="site-footer-title">Newsletter</h6></center>
 
-                        <form class="custom-form newsletter-form" action="#" method="post" role="form">
+                        <form class="custom-form newsletter-form" action="" id="newsletter">
                             <h6 class="site-footer-title">Get notified jobs news</h6>
 
                             <div class="input-group">
@@ -1786,6 +1812,5 @@ Bootstrap 5 HTML CSS Template
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/counter.js"></script>
         <script src="js/custom.js"></script>
-
     </body>
 </html>
