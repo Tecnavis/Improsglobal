@@ -876,7 +876,7 @@ nav[aria-label="breadcrumb"] {
   CATEGORIES              
 -----------------------------------------*/
 .categories-block {
-  background: var(--primary-color);
+  background: rgb(3, 3, 63);
   border-radius: var(--border-radius-large);
   border: 8px solid var(--social-icon-link-bg-color);
   width: 150px;
